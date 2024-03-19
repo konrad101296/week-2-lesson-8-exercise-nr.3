@@ -1,18 +1,16 @@
-﻿using System.Data;
+using System.Data;
 
-int wynik;
-int a = 1;
-int b = 1;
-int c;
-int d;
-Console.WriteLine(a);
-Console.WriteLine(b);
+int firstNumber = 1;
+int secondNumber = 1;
+int result;
+int additionalVariable;
+Console.WriteLine(firstNumber);
+Console.WriteLine(secondNumber);
 for (int i = 1; i < 45; i++)
 {
-   
-    c = a + b;
-    d = b;
-    b = c;
-    a = d;
-    Console.WriteLine(c);
+    result = firstNumber + secondNumber;
+    additionalVariable = secondNumber;
+    secondNumber = result;
+    firstNumber = additionalVariable;
+    Console.WriteLine(result);
 }
